@@ -1,0 +1,138 @@
+{
+    "TABLE_vrf": {
+        "ROW_vrf": [
+            {
+                "vrf-name-out": "default",
+                "TABLE_addrf": {
+                    "ROW_addrf": {
+                        "addrf": "ipv4",
+                        "TABLE_prefix": {
+                            "ROW_prefix": 
+                                [
+                                    {
+                                        "ipprefix": "10.98.98.0/24", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", 
+                                        "TABLE_path": {
+                                            "ROW_path": {
+                                                "ipnexthop": "10.98.98.1", "ifname": "Lo98", "uptime": "P4DT47M12S", "pref": "0", "metric": "0", "clientname": "direct", "ubest":"true"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "ipprefix": "10.98.98.1/32",
+                                        "ucast-nhops": "1",
+                                        "mcast-nhops": "0",
+                                        "attached": "true",
+                                         "TABLE_path": {
+                                            "ROW_path": {
+                                                "ipnexthop": "10.98.98.1",
+                                                "ifname": "Lo98",
+                                                "uptime": "P4DT47M12S",
+                                                "pref": "0",
+                                                "metric": "0",
+                                                "clientname": "local", 
+                                                "ubest": "true"
+                                                }
+                                            }
+                                    }, 
+                                    {
+                                        "ipprefix": "10.99.99.0/24", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", 
+                                            "TABLE_path": {
+                                                "ROW_path": {
+                                                    "ipnexthop": "10.99.99.1", "ifname": "Lo99", "uptime": "P4DT47M12S", "pref": "0", "metric": "0", "clientname": "direct","ubest": "true"
+                                                    }
+                                             }
+                                    },
+                                    {
+                    "ipprefix": "10.99.99.1/32",
+                    "ucast-nhops": "1",
+                    "mcast-nhops": "0",
+                    "attached": "true",
+                    "TABLE_path": {
+                        "ROW_path": {
+                            "ipnexthop": "10.99.99.1", "ifname": "Lo99", "uptime": "P4DT47M12S", "pref": "0", "metric": "0", "clientname": "local", "ubest": "true"}}}, 
+                            {"ipprefix": "10.131.22.0/24", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", 
+                    "TABLE_path": {"ROW_path": {"ipnexthop": "10.131.22.192", "ifname": "Vlan406", "uptime": "P1DT7H24M10S", "pref": "0", "metric": "0", "clientname": "direct", "ubest": "true"}}}, {"ipprefix": "10.131.22.192/32", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", "TABLE_path": {"ROW_path": {"ipnexthop": "10.131.22.192", "ifname": "Vlan406", "uptime": "P1DT7H24M10S", "pref": "0", "metric": "0", "clientname": "local", "ubest": "true"}}}, 
+                            {"ipprefix": "110.110.110.111/32", "ucast-nhops": "2", "mcast-nhops": "0","attached": "true",
+                    "TABLE_path": {
+                        "ROW_path": [
+                                {
+                                    "ipnexthop": "110.110.110.111",
+                                    "ifname": "Lo110",
+                                    "uptime": "P1DT17H14M32S",
+                                    "pref": "0",
+                                    "metric": "0",
+                                    "clientname": "local",
+                                    "ubest": "true"
+                                },
+                                {
+                                    "ipnexthop": "110.110.110.111",
+                                    "ifname": "Lo110", "uptime": "P1DT17H14M32S", "pref": "0", "metric": "0", "clientname": "direct", "ubest": "true"}]}}, {"ipprefix": "172.16.10.0/24", "ucast-nhops": "1","mcast-nhops": "0",
+                                    "attached": "true",
+                                    "TABLE_path": {
+                                        "ROW_path": {
+                                            "ipnexthop": "172.16.10.4",
+                                            "ifname": "Lo1", "uptime": "PT21H20M21S", "pref": "0", "metric": "0", "clientname": "direct", "ubest": "true"}}}, {"ipprefix": "172.16.10.4/32", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", "TABLE_path": {"ROW_path": {"ipnexthop": "172.16.10.4", "ifname": "Lo1", "uptime": "PT21H20M21S", "pref": "0", "metric": "0", "clientname": "local", "ubest": "true"}}}]}}}}, {"vrf-name-out": "management", "TABLE_addrf": {"ROW_addrf": {"addrf": "ipv4", "TABLE_prefix": {"ROW_prefix": [{"ipprefix": "0.0.0.0/0", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "false", "TABLE_path": {"ROW_path": {"ipnexthop": "10.10.20.254", "uptime": "P4DT47M12S", "pref": "1", "metric": "0", "clientname": "static", "ubest": "true"}}}, {"ipprefix": "10.10.20.0/24", "ucast-nhops":"1","mcast-nhops": "0",
+                                            "attached": "true",
+                                            "TABLE_path": {
+                                                "ROW_path": {
+                                                    "ipnexthop": "10.10.20.95",
+                                                    "ifname": "mgmt0", "uptime": "P4DT47M12S", "pref": "0", "metric": "0", "clientname": "direct", "ubest": "true"}}}, {"ipprefix": "10.10.20.95/32", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", "TABLE_path": {"ROW_path": {"ipnexthop": "10.10.20.95", "ifname": "mgmt0","uptime": "P4DT47M12S",
+                                                    "pref": "0",
+                                                    "metric": "0",
+                                                    "clientname": "local",
+                                                    "ubest": "true"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+            {
+                "vrf-name-out": "telco-tenant", 
+                        "TABLE_addrf": 
+                            {"ROW_addrf": {"addrf": "ipv4", "TABLE_prefix": {"ROW_prefix": [{
+                                                "ipprefix": "10.40.102.0/24", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", "TABLE_path": {"ROW_path": {"ipnexthop": "10.40.102.1", "ifname": "Vlan402","uptime": "P2DT12H9M11S","pref": "0",
+                        "metric": "0",
+                        "clientname": "direct",
+                        "tag": "54321",
+                        "ubest": "true"
+                    }
+                }
+            },
+            {
+                "ipprefix": "10.40.102.1/32",
+                "ucast-nhops": "1",
+                "mcast-nhops": "0",
+                "attached": "true",
+                "TABLE_path": {
+                    "ROW_path": {
+                        "ipnexthop": "10.40.102.1",
+                        "ifname": "Vlan402",
+                        "uptime": "P2DT12H9M11S",
+                        "pref": "0",
+                        "metric": "0",
+                        "clientname": "local",
+                        "tag": "54321", "ubest": "true"}
+                        }
+            }, 
+            {
+                "ipprefix": "10.40.103.0/24", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", 
+                 "TABLE_path": {
+                    "ROW_path": {
+                        "ipnexthop": "10.40.103.1", "ifname": "Vlan403", "uptime": "P1DT7H35M14S", "pref": "0", "metric": "0", "clientname": "direct", "tag": "54321", "ubest": "true"}}}, {"ipprefix": "10.40.103.1/32", "ucast-nhops": "1", "mcast-nhops": "0", "attached": "true", 
+                        "TABLE_path": 
+                            {"ROW_path": {
+                                "ipnexthop": "10.40.103.1", "ifname": "Vlan403", "uptime": "P1DT7H35M14S", "pref": "0", "metric": "0", "clientname": "local", "tag": "54321", "ubest": "true"}
+                                }
+                            }
+            ]
+            
+        }
+        }
+        }
+        }
+    ]
+    }
+}

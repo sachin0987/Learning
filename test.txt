@@ -1,0 +1,34 @@
+Extended Workflow Steps:
+Data Retrieval from NMDB:
+
+Develop a script or code that interacts with NMDB's API to fetch device parameters/data.
+Access NSO Device Inventory:
+
+Connect to NSO and retrieve the current inventory of devices using the NSO API or relevant commands.
+Compare Data from NMDB with NSO Inventory:
+
+Compare the devices retrieved from NMDB with the devices present in the NSO inventory. Identify any discrepancies or missing devices.
+Check Device Existence in NSO Inventory:
+
+For each device from NMDB, check if it exists in the NSO inventory. If a device is missing:
+Invoke NSO API for Device Addition:
+
+Develop a routine within your code that uses the NSO API to add the missing device to the NSO inventory.
+Construct API calls or use NSO Python libraries to send requests to NSO and add the device. Ensure the necessary permissions and authentication are set up.
+Check Device Existence in Cisco Crosswork:
+
+After successfully adding the device to NSO, check if the same device exists in Cisco Crosswork.
+Add Device to Cisco Crosswork:
+
+If the device is not found in Cisco Crosswork, implement a process to add the device to Crosswork.
+Utilize Crosswork's API or relevant commands to add the device to the Crosswork inventory.
+Error Handling and Logging:
+
+Implement error handling mechanisms and logging for all operations, including NSO and Crosswork interactions.
+Testing and Validation:
+
+Test the entire workflow end-to-end using sample data to ensure devices are correctly identified, added to NSO, and then synchronized with Cisco Crosswork.
+Validate the data in Crosswork to confirm the successful addition of devices.
+Automation and Scheduling:
+
+Automate the entire workflow and schedule regular runs to maintain consistency between NMDB, NSO, and Crosswork inventories.

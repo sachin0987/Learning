@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" modified="2023-12-20T12:00:00.000Z" agent="5.0 (Windows)" etag="xxxxxx-xxxxx" version="13.10.6" type="device">
+  <diagram name="DeviceManagementWorkflow" id="xxxxxx-xxxxx">
+    <mxGraphModel dx="600" dy="400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Start -->
+        <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <!-- Retrieve from NMDB -->
+        <mxCell id="3" value="Retrieve from NMDB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="240" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" connectable="0" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Check/Add to NSO -->
+        <mxCell id="5" value="Check/Add to NSO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" connectable="0" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Check/Add to Crosswork -->
+        <mxCell id="7" value="Check/Add to Crosswork" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="240" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" connectable="0" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- End -->
+        <mxCell id="9" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="400" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" connectable="0" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
