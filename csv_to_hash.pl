@@ -2,7 +2,6 @@
 
 use strict;
 use warnings;
-use Text::CSV;
 
 # Check if a CSV file is provided as a command-line argument
 if (@ARGV != 1) {
@@ -22,20 +21,21 @@ print_hash_array(@data);
 sub csv_to_hash {
     my ($csv_file) = @_;
 
-    # Create a CSV parser object
-    my $csv = Text::CSV->new({ binary => 1, auto_diag => 1, eol => $/ });
-
     # Open the CSV file for reading
     open my $fh, '<', $csv_file or die "Could not open CSV file '$csv_file': $!\n";
 
     # Read the header row to get the column names
-    my $header_row = $csv->getline($fh);
+    my $header_row = <$fh>;
+    chomp $header_row;
+    my @column_names = split /,/, $header_row;
 
     # Read the rest of the rows and convert them to a hash
     my @data;
-    while (my $row = $csv->getline($fh)) {
+    while (my $row = <$fh>) {
+        chomp $row;
+        my @values = split /,/, $row;
         my %entry;
-        @entry{@$header_row} = @$row;
+        @entry{@column_names} = @values;
         push @data, \%entry;
     }
 
